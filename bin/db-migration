@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+
+    namespace YpDbMigrations;
+
+    require dirname(dirname(__FILE__)) . '/vendor/autoload.php';
+
+    use Symfony\Component\Console\Application;
+    use YpDbMigrations\Command\UpAllCommand;
+
+    $application = new Application();
+
+    $application->add(new UpAllCommand());
+
+    $application->run();

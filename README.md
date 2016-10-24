@@ -6,3 +6,5 @@ Goals:
 - plain SQL
 - cli enterface
 - fake data generator
+
+Using Simphony console component
